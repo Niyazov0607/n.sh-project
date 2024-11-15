@@ -1,0 +1,120 @@
+.nav {
+    &__btn {
+        width: 138px;
+        height: 48px;
+        border-radius: 6px;
+        background: #00000000;
+        border: 1px solid grey;
+        font-size: 14px;
+        font-weight: 900;
+        color: white;
+        transition: 0.3s ease;
+    }
+
+    &__btn:hover {
+        background: #ef6d58;
+        border: none;
+    }
+}
+
+.hero {
+    &__buttons {
+        display: flex;
+        margin-top: 34px;
+        gap: 46px;
+        margin-left: 10px;
+    }
+
+    &__btn {
+        width: 154px;
+        height: 48px;
+        border-radius: 6px;
+        background: #ef6d58;
+        border: none;
+        font-size: 14px;
+        font-weight: 900;
+        color: white;
+        transition: 0.3s ease;
+    }
+
+    &__btn:hover {
+        background: white;
+        color: #ef6d58;
+        border: none;
+    }
+
+    &__buttons-2 {
+        display: flex;
+        margin-top: 34px;
+        gap: 46px;
+    }
+
+    &__btn-2 {
+        width: 154px;
+        height: 48px;
+        border-radius: 6px;
+        background: rgba(255, 255, 255, 0);
+        border: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+        transition: 0.3s ease;
+    }
+
+    &__btn-2:hover {
+        background: #ef6d58;
+        border: none;
+    }
+}
+
+.exprience {
+    &__button {
+        margin-top: 34px;
+    }
+
+    &__btn {
+        width: 138px;
+        height: 48px;
+        border-radius: 6px;
+        font-size: 14px;
+        font-weight: 900;
+        line-height: 14.35px;
+        color: #391400;
+        transition: 0.3se ease;
+        border: none;
+        transition: 0.3s ease;
+        background: white;
+        box-shadow: 0px 3px 9px 0px #39140014;
+    }
+
+    &__btn:hover {
+        background: #ef6d58;
+        color: white;
+    }
+}
+
+.product {
+    &__button {
+        margin-top: 36px;
+    }
+
+    &__btn {
+        width: 138px;
+        height: 48px;
+        border-radius: 6px;
+        border: none;
+        background: white;
+        font-size: 14px;
+        font-weight: 900;
+        line-height: 14.35px;
+        color: #391400;
+        transition: 0.3s ease;
+    }
+
+    &__btn:hover {
+        background: #ef6d58;
+        color: white;
+
+    }
+}

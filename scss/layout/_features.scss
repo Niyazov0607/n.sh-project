@@ -1,0 +1,95 @@
+.features {
+    background: $BG-2-COLOR;
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 250px;
+        align-items: center;
+    }
+
+    &__span-1 {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+        color: #ef6d58;
+    }
+
+    &__desc {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 32px;
+        color: #391400;
+        padding: 30px 0 28px 0;
+    }
+
+    &__span {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+        color: #391400;
+    }
+
+    &__cards {
+        display: flex;
+    }
+
+    &__card-1 {
+        padding: 48px 72px 46px 48px;
+        border-radius: 6px 6px 0px 6px;
+        background: white;
+        border: 1px solid #f3d1bf;
+
+        position: relative;
+
+        &::after {
+            content: url(../../asetts/icon/Combined\ Shape.svg);
+            position: absolute;
+            top: 23%;
+            left: 23%;
+        }
+    }
+
+    &__title {
+        padding: 41px 0 19px 0;
+        font-size: 24px;
+        font-weight: 700;
+        color: #391400;
+    }
+
+    &__desc-2 {
+        color: #391400a3;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+    }
+
+    &__card-2 {
+        height: 272px;
+        padding: 105px 48px 46px 48px;
+        border-radius: 6px;
+        border: 1px solid #f3d1bf;
+        margin-top: 65px;
+    }
+}
+
+@include mobile() {
+    .features {
+        min-width: 375px;
+
+        &__wrapper {
+            justify-content: center;
+            flex-direction: column;
+            padding: 50px 20px;
+        }
+
+        &__cards {
+            flex-direction: column;
+            margin-top: -200px;
+        }
+
+        &__card-2 {
+            margin-top: -1px;
+        }
+    }
+}

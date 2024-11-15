@@ -1,0 +1,99 @@
+.agency {
+    background: $BG-2-COLOR;
+    padding: 50px 0;
+
+    &__wrapper {
+        justify-content: center;
+    }
+
+    &__span {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+        text-transform: uppercase;
+        color: #ef6d58;
+    }
+
+    &__desc {
+        font-size: 40px;
+        font-weight: 800;
+        color: #391400;
+    }
+
+    &__cards {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+    }
+
+    &__card {
+        border: 1px solid #f3d1bf;
+        padding: 48px 48px 52px 48px;
+        border-radius: 6px;
+        transition: 0.3s ease;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: url(../../asetts/images/Combined\ Shape.png);
+            top: 20%;
+            right: 70.5%;
+        }
+    }
+
+    &__card:hover {
+        box-shadow: 5px 5px 9px 9px #f3d1bf;
+        border-radius: 6px;
+    }
+
+    &__data {
+        margin-left: 195px;
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        color: #391400;
+        padding: 41px 0 19px 0;
+    }
+
+    &__desc-2 {
+        font-size: 16px;
+        font-weight: 400;
+        color: #391400a3;
+        padding: 0 0 26px 0;
+    }
+
+    &__span-2 {
+        font-size: 16px;
+        font-weight: 400;
+        color: #391400;
+    }
+
+    &__spn-2 {
+        text-align: left;
+    }
+}
+
+@include mobile() {
+    .agency {
+        min-width: 375px;
+
+        &__wrapper {
+            flex-direction: column;
+            padding: 80px 0;
+            gap: 20px 30px;
+            justify-content: center;
+        }
+
+        &__cards {
+            flex-direction: column;
+        }
+
+        &__data {
+            margin-left: 25px;
+        }
+    }
+}
